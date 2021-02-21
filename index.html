@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-
-
-<meta property="og:title" content="Amazing Facebook" />
+ <title>Facebook</title>
+ 
+ 
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <meta property="og:title" content="Amazing Facebook" />
 <meta property="og:description" content="my facebook profile page" />
 <meta property="og:image" content="z9 logo black finla.png" />
 <meta property="og:image:secure_url" content="z9 logo black finla.png" />
 <meta property="og:image:width" content="1000" />
 <meta property="og:image:height" content="522" />
 
-
-
-
- <title>
- facebutt website
-</title>
- <meta charset="utf-8">
- <meta name="title" comtent="My amazing website">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
  <style>
  :root{
   --blue: #5657ff;
@@ -29,15 +24,23 @@
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   user-select:none;
+   user-select: none;
    }
+   
   body{
    width: 100%;
-   height: 250vh;
+   height: 900vh;
    background: var(--main);
   }
   
-  /*-----Header-------*/ 
+ </style>
+</head> 
+<body>
+
+ <!-------------- head --------------->
+ <header>
+ 
+ <style>
   header{
    width: 100%;
    background: var(--blue);
@@ -67,10 +70,24 @@
    text-decoration: none;
    text-align: right;
   }
-				  /*-----Header end-------*/ 
-  
-				  /*------- Nav ----------*/ 
-  nav{
+ </style>
+ 
+  <h1>Facebook</h1>
+  <div class="headside">
+   <h5><a href="#">Search</a></h5>
+   <h5><a href="#">Messenger</a></h5>
+  </div>
+ </header>
+ 
+ <!-------------- head end --------------->
+ 
+ 
+ <!-------------- Nav --------------->
+ 
+ <nav>
+ 
+ <style>
+   nav{
    width: 99%;
    height: auto;
    background: var(--main);
@@ -113,11 +130,28 @@
    border: solid 1px #fff;
    right: -11px;
   }
-				  /*----- Nav end -------*/ 
-  
-  
-				  /*----- Upper -------*/ 
-  main .upper{
+ 
+ </style>
+ 
+  <ul>
+   <li><a href="#">Home</a></li>
+   <li><a href="#">Friends</a></li>
+   <li>
+   <a href="#" style="color:#fff;background:#888">
+   Profile</a></li>
+   <li><a href="#">Noti</a></li>
+   <li><a href="#">About</a></li>
+  </ul>
+ </nav><hr/>
+ 
+ <!-------------- Nav end --------------->
+ 
+ <main>
+ 
+ <!-------------- Upper --------------->
+ 
+ <style>
+   main .upper{
    height: 500px;
   }
   main .upper .coverphoto{
@@ -270,13 +304,71 @@
    border-radius: 3px;
    background: #fff;
    transform: rotate(45deg);
+  }  .select{
+   background: #a5a5a5;
+   position: fixed;
+   width: 95%;
+   left: 10px;
+   bottom: -30px;
+   border-radius: 5px;
+   z-index: 1;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 300ms;
   }
+  .select ul{
+   text-align: center;
+  }
+  .select li{
+   padding: 15px 0;
+   list-style: none;
+   border: solid 1px #e5e5e5;
+  }
+  .select li:active{
+   background:var(--blue);
+   color: #fff;
+  }
+  main .camera:hover .select{
+   visibility: visible;
+   opacity: 1;
+   bottom: 0;
+  }
+ 
+ </style>
+ 
+ <div class="upper">
+  <div class="coverphoto">
+   <p> + Add Cover Photo</p> 
+    </div>
+    <div class="camera">
+     <div class="profile">
+       <div class="c"></div>
+       <div class="b"></div>
+       
+        <div class='select'>
+  <ul>
+   <li>Select Profile</li>
+   <li>Choose Profile</li>
+   <li>Add Story</li>
+   <li>View Profile</li>
+   <li>Insert Frame</li>
+  <ul>
+ </div>
+       
+     </div> 
+    </div>
+    
+  <h2 class="profileName">Soe Thiha Lwin</h2>
+  <div class="mark"></div>
+  <p class="bio">z sphinx</p>
+  <div class="story"><p><span> + </span>Add to story</p></div>
+ </div><hr/>
+ <!-------------- Upper end --------------->
+ 
+ <!-------------- Info --------------->
   
-  /*----- Upper End -------*/ 
-  
-  
-  /*----- Info -------*/ 
-  .info ul{
+ <style>
+ .info ul{
    padding-left: 25px;
   }
   .info ul li{
@@ -351,43 +443,46 @@
    font-weight: 600;
   }
   
+ 
+ </style>
+ 
+ <div class="info">
+  <ul>
+   <li>Went to <b>BEHS 1 Kyonmange</b></li>
+   <li>Studied at <b>YUFL</b></li>
+   <li>Lives in <b>Yangon</b></li>
+   <li>From <b>Kyonmange Ayeyarwady Burma</b></li>
+   <li><b>Z_sphinx</b></li>
+   <li><a href="#">See More info</a></li>   
+  </ul>
   
-  /* -------------------------------*/
+  <div class="hobbycontainer">
+   <div class="hobby hobby1">Coding</div>
+   <div class="hobby hobby2">Animation</div>
+   <div class="hobby hobby3">3D Modeling</div>
+  </div>
   
-  .select{
-   background: #a5a5a5;
-   position: fixed;
-   width: 95%;
-   left: 10px;
-   bottom: -30px;
-   border-radius: 5px;
-   z-index: 1;
-   visibility: hidden;
-   opacity: 0;
-   transition: all 300ms;
-  }
-  .select ul{
-   text-align: center;
-  }
-  .select li{
-   padding: 15px 0;
-   list-style: none;
-   border: solid 1px #e5e5e5;
-  }
-  .select li:active{
-   background:var(--blue);
-   color: #fff;
-  }
-  main .camera:hover .select{
-   visibility: visible;
-   opacity: 1;
-   bottom: 0;
-  }
-  /* -------------------------------*/
+  <div class="feature">
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+   <div></div>
+  </div>
   
-  /* ----------- Friends ---------------*/
+  <div class="detail">
+   <p>Edit Public Details</p>
+  </div><hr style="margin: 20px 0 5px 0;">
   
-  .friend{
+ </div>
+ <!-------------- Info end --------------->
+ 
+ 
+ <!-------------- Friend --------------->
+  
+ <style>
+ .friend{
    width: 100%;
    position: relative;
   }
@@ -407,7 +502,7 @@
   }
   
   .friend .friendpic{
-   width: 100%;
+   width: 98%;
    padding: 5px;
    margin-left: 7px;
   }
@@ -451,94 +546,9 @@
   .friend .allfriends:active{
    filter: brightness(1.3);
   }
+ 
  </style>
-</head> 
-<body>
-
- <header>
-  <h1>Facebutt</h1>
-  <div class="headside">
-   <h5><a href="#">Search</a></h5>
-   <h5><a href="#">Messenger</a></h5>
-  </div>
- </header>
  
- <nav>
-  <ul>
-   <li><a href="#">Home</a></li>
-   <li><a href="#">Friends</a></li>
-   <li>
-   <a href="#" style="color:#fff;background:#888">
-   Profile</a></li>
-   <li><a href="#">Noti</a></li>
-   <li><a href="#">About</a></li>
-  </ul>
- </nav><hr/>
- 
- <main>
- 
- <!-------------- Upper --------------->
- <div class="upper">
-  <div class="coverphoto">
-   <p> + Add Cover Photo</p> 
-    </div>
-    <div class="camera">
-     <div class="profile">
-       <div class="c"></div>
-       <div class="b"></div>
-       
-        <div class='select'>
-  <ul>
-   <li>Select Profile</li>
-   <li>Choose Profile</li>
-   <li>Add Story</li>
-   <li>View Profile</li>
-   <li>Insert Frame</li>
-  <ul>
- </div>
-       
-     </div> 
-    </div>
-    
-  <h2 class="profileName">Soe Thiha Lwin</h2>
-  <div class="mark"></div>
-  <p class="bio">z sphinx</p>
-  <div class="story"><p><span> + </span>Add to story</p></div>
- </div><hr/>
- <!-------------- Upper end --------------->
- 
- <!-------------- Info --------------->
- <div class="info">
-  <ul>
-   <li>Went to <b>BEHS 1 Kyonmange</b></li>
-   <li>Studied at <b>YUFL</b></li>
-   <li>Lives in <b>Yangon</b></li>
-   <li>From <b>Kyonmange Ayeyarwady Burma</b></li>
-   <li><b>Z_sphinx</b></li>
-   <li><a href="#">See More info</a></li>   
-  </ul>
-  
-  <div class="hobbycontainer">
-   <div class="hobby hobby1">Coding</div>
-   <div class="hobby hobby2">Animation</div>
-   <div class="hobby hobby3">3D Modeling</div>
-  </div>
-  
-  <div class="feature">
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-   <div></div>
-  </div>
-  
-  <div class="detail">
-   <p>Edit Public Details</p>
-  </div><hr style="margin: 20px 0 5px 0;">
-  
- </div>
- <!-------------- Info end --------------->
  
  <div class="friend">
  
@@ -552,16 +562,421 @@
    <div>  <p>Friend 3</p> </div>
    <div> <p>Friend 4</p> </div>
    <div> <p>Friend 5</p> </div>
-   <div>  <p>Friend 6</p> </div>
+   <div> <p>Friend 6</p> </div>
   </div>
   
-  <p class="allfriends">See All Friends</p>
-  <hr>
- 
+  <p class="allfriends">See All Friends</p><hr>
  <div>
  
-	
+ <!-------------- Friend end --------------->
+ 
+ <!-------------- highlight --------------->
+  
+ <style>
+  .highlight{
+  width: 100%;
+ }
+ 
+ .highlight h2{
+  margin-top: 10px;
+  float: left;
+ }
+ 
+ .highlight .add{
+  text-align: right;
+  margin-right: 10px;
+  padding-top: 10px;
+  color: var(--blue);
+  font-weight: 500;
+  font-size: 18px;
+ }
+ 
+ .highlight .add:active{ 
+   filter: brightness(1.3);
+ }
+ 
+ .highlight .highlightpic{
+  width: 90%;
+  margin-left: 10px;
+  margin-top: 20px;
+ }
+ 
+ .highlight .highlightpic div{
+  width: 100px;
+  height: 200px;
+  background: #777;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+  transition: all 200ms;
+ }
+ 
+ .highlight .highlightpic div p{
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+ }
+ 
+ .highlight .highlightpic div:active{
+  transform: scale(.9);
+ }
+ .highlight .edit{
+  width: 90%;
+  background: var(--blue);
+  margin: 10px auto;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 10px;
+ } 		 
+ 
+ </style>
+ 
+ 
+ <div class="highlight">
+ 
+  <h2>Story Highlights</h2>
+  <p class='add'>Add New</p>
+  
+  <div class="highlightpic">
+   <div><p>highlight 1</p></div>
+   <div><p>highlight 2</p></div>
+  </div>
+  
+  <p class="edit">Edit Story Highlights</p>
+  <hr>
+ </div>
+ 
+ 
+ <!-------------- post --------------->
+  
+ <style>
+  .post{
+ }
+ 
+ .post h2{
+  float: left;
+  margin-left: 10px;
+  margin:top: 5px;
+ }
+ 
+ .post .side{
+   padding-right: 5px;
+   padding-top: 5px;
+ }
+ 
+ .post .side div{
+  width: 40px;
+  height: 30px;
+  background: #575757;
+  display: inline-block;
+  float: right;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+ }
+ 
+ .post .side div:active{
+  transform: scale(.95);
+ }
 
+ 
+ .post .smallprofile{
+  width: 50px;
+  height: 50px;
+  background: #555;
+  border-radius: 50%;
+  clear: both;
+  float: left;
+  margin-left: 10px;
+ }
+ 
+ .post input[type="text"]{
+  margin-top: 15px;
+  margin-left: 10px;
+  font-size: 21px;
+  background: var(--main);
+  border: none;
+  outline: none;
+ }
+ 
+ .post hr{
+  clear: both;
+  margin-top: 25px;
+ }
+ 
+ .post .live ul{
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+ 
+ .post .live ul li{
+  display: inline-block;
+  padding: 5px 40px;
+  border-right: solid 1px #383838;
+  font-weight: 500;
+ }
+ 
+ .post .live ul li:active{
+  color: var(--blue);
+ }
+ 		
+ 
+ </style>
+ 
+ 
+ <div class='post'>
+  
+  <h2>Posts</h2>
+  
+  <div class="side">
+   <div> F </div>
+   <div> S </div>
+  </div>
+  
+  <div class="smallprofile"> </div>
+   <input type="text" placeholder="What's on your mind?">
+  <hr>
+  
+  <div class="live">
+   <ul>
+    <li>Live</li>
+    <li>Photo</li>
+    <li>Life Event</li>
+   </ul>
+  </div>
+  
+ </div><hr>
+ 
+ <!-------------- post end --------------->
+ 
+ 
+ <!-------------- Know --------------->
+  
+ <style>
+  .know{
+  margin: 10px 0 10px 10%;
+ }
+ 
+ .know div{
+  background: #bbb;
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  margin: 10px 0;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 500;
+ }
+ 
+ .know div:active{
+  color: var(--blue);
+ }
+ 
+ </style>
+ 
+ 
+ <div class="know">
+ 
+  <div>Photos</div>
+  <div>Did You Know</div>
+ 
+ </div><hr>
+ 
+ <!-------------- Know end --------------->
+ 
+ <!-------------- share end --------------->
+ <style>
+ 
+  .share{
+  }
+  
+  .share .s1{
+   width: 100%;
+   height: 400px;
+   background: #999;
+   margin-top: 10px;
+  }
+  
+  .share .post{
+   margin-top: 20px;
+   clear: both;
+  }
+  
+  .share .shareprofile{
+   width: 50px;
+   height: 50px;
+   background: #777;
+   border-radius: 50%;
+   float: left;
+   margin: 10px 0 10px 10px;
+  }
+  
+  .share .sharename{
+   position: relative;
+   top: 15px;
+   margin-left: 65px;
+   font-size: 18px;
+  }
+  
+  .share .date{
+   position: relative;
+   top: 15px;
+   font-size: 14px;
+   padding-left: 60px;
+   color: #999;
+  }
+  
+  .share .reaction ul li{
+   display: inline-block;
+   padding: 5px 40px;
+   border-right: solid 1px #666;
+   border-bottom: solid 1px #666;
+  }
+  
+  .share .reaction ul li:active{
+   color: var(--blue);
+   background: #ddd;
+  }
+  hr{
+  margin: 10px 0 5px 0;
+  }
+  
+ </style>
+ 
+ <!-------------- share 1 --------------->
+ <div class="share">
+ 
+ <div class="shareprofile"> </div>
+  <p class="sharename">
+   <b>Soe Thiha Lwin</b>
+  </p>
+  <p class="date">Feb 18</p>
+ <p class="post">
+  This is shared post 1.
+ </p>
+ <div class="s1"></div>
+ 
+ <div class="reaction">
+  <ul>
+   <li>Like</li>
+   <li>Comment</li>
+   <li>Share</li>
+  </ul>
+ </div><hr>
+ </div>
+ 
+ <!-------------- share 1 end --------------->
+ 
+ 
+ <!-------------- share 2 --------------->
+ 
+ <div class="share">
+ 
+ <div class="shareprofile"> </div>
+  <p class="sharename">
+   <b>Soe Thiha Lwin</b> shared a post.
+  </p>
+  <p class="date">Feb 17</p>
+ <p class="post">
+  This is shared post 2.
+ </p>
+ <div class="s1"></div>
+ 
+ <div class="reaction">
+  <ul>
+   <li>Like</li>
+   <li>Comment</li>
+   <li>Share</li>
+  </ul>
+ </div><hr>
+ </div>
+ 
+ <!-------------- share 2 end --------------->
+ 
+ <!-------------- share 3 --------------->
+ 
+ <div class="share">
+ 
+ <div class="shareprofile"> </div>
+  <p class="sharename">
+   <b>Soe Thiha Lwin</b>
+  </p>
+  <p class="date">Feb 16</p>
+ <p class="post">
+  This is shared post 3.
+ </p>
+ <div class="s1"></div>
+ 
+ <div class="reaction">
+  <ul>
+   <li>Like</li>
+   <li>Comment</li>
+   <li>Share</li>
+  </ul>
+ </div><hr>
+ </div>
+ 
+ 
+ <!-------------- share 3 end --------------->
+ 
+ 
+ 
+ <!-------------- share 4  --------------->
+ 
+ <div class="share">
+ 
+ <div class="shareprofile"> </div>
+  <p class="sharename">
+   <b>Soe Thiha Lwin</b> shared a post.
+  </p>
+  <p class="date">Feb 14</p>
+ <p class="post">
+  This is shared post 4.
+ </p>
+ <div class="s1"></div>
+ 
+ <div class="reaction">
+  <ul>
+   <li>Like</li>
+   <li>Comment</li>
+   <li>Share</li>
+  </ul>
+ </div><hr>
+ </div>
+ 
+ 
+ <!-------------- share 4 end --------------->
+ 
+ 
+ <!-------------- share 5 --------------->
+
+ 
+ <div class="share">
+ 
+ <div class="shareprofile"> </div>
+  <p class="sharename">
+   <b>Soe Thiha Lwin</b> shared a post.
+  </p>
+  <p class="date">Feb 13</p>
+ <p class="post">
+  This is shared post 5.
+ </p>
+ <div class="s1"></div>
+ 
+ <div class="reaction">
+  <ul>
+   <li>Like</li>
+   <li>Comment</li>
+   <li>Share</li>
+  </ul>
+ </div><hr>
+ </div>
+ 
+ <!-------------- share 5 end --------------->
+ 
+ <!-------------- share end --------------->
  </main>
  
 </body>
